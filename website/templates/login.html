@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
-{% block title %} Login {% endblock %}
+{% block title %} Đăng nhập {% endblock %}
 {% block content %}
-<h1>Login Page</h1>
 
 {% if boolean == True%}
 {% else %}
 {% endif %}
 
 <form method="POST">
-    <h3 align="center">Login</h3>
+  <br/>
+    <h2 align="center">Phờ lát</h2>
     <div class="form-group">
       <label for="email">Email</label>
       <input
@@ -20,7 +20,7 @@
       />
     </div>
     <div class="form-group">
-      <label for="password">Password</label>
+      <label for="password">Mật khẩu</label>
       <input
         type="password"
         class="form-control"
@@ -29,7 +29,7 @@
         placeholder="Enter password"
       />
     </div>
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" class="btn btn-primary">Đăng nhập</button>
 </form>
 
 {% endblock %}

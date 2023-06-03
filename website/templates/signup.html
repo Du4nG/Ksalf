@@ -1,10 +1,10 @@
-{% extends 'base.html' %} {% block title %} SignUp {% endblock %}
+{% extends 'base.html' %} {% block title %} Đăng ký {% endblock %}
 {% block
 content %}
-<h1>SignUp Page</h1>
 
 <form method="POST">
-  <h3 align="center">Sign Up</h3>
+  <br/>
+  <h2 align="center">Phờ lát</h2>
   <div class="form-group">
     <label for="email">Email</label>
     <input
@@ -12,40 +12,40 @@ content %}
       class="form-control"
       id="emal"
       name="email"
-      placeholder="Enter your email"
+      placeholder="Nhập meo"
     />
   </div>
   <div class="form-group">
-    <label for="firstName">First name</label>
+    <label for="firstName">Tên</label>
     <input
       type="text"
       class="form-control"
       id="firstName"
       name="firstName"
-      placeholder="Enter first name"
+      placeholder="Tên mày là gì ?"
     />
   </div>
   <div class="form-group">
-    <label for="password1">Password</label>
+    <label for="password1">Mật khẩu</label>
     <input
       type="password"
       class="form-control"
       id="password1"
       name="password1"
-      placeholder="Enter password"
+      placeholder="Pass mày là gì ?"
     />
   </div>
   <div class="form-group">
-    <label for="password2">Password (Confirm)</label>
+    <label for="password2">Xác nhận mật khẩu</label>
     <input
       type="password"
       class="form-control"
       id="password2"
       name="password2"
-      placeholder="Cnfirm password"
+      placeholder="Chắc chưa ?"
     />
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Đăng ký</button>
 </form>
 
 {% endblock %}

@@ -1,5 +1,28 @@
 {% extends 'base.html' %}
 {% block title %} Home {% endblock %}
 {% block content %}
-<h1> Home Page</h1>
+
+<br/>
+<h2 align='center'> Phờ látttt </h2>
+<br/>
+
+<!-- Thêm note -->
+<ul class='list-group list-group-flush' id='notes'>
+    {% for note in user.notes %}
+        <li class='list-group-item'> {{ note.data }}</li>
+            <!-- delete -->
+            <button type ='button' class='close' onClick='deleteNote( {{note.id}} )'> 
+                <span aria-hidden='true'> &times; </span>
+            </button>
+    {% endfor %}
+</ul>
+
+<form method='POST'>
+    <textarea name='note' id='note' class='form-control'></textarea>
+    <br/>
+    <div align='center'>
+        <button type='submit' class='btn btn-primary'>Thêm</button>
+    </div>
+</form>
+
 {% endblock %}
